@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Perros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 20px 0;
+        }
+        p {
+            color: #333;
+            padding: 5px 0;
+            text-align: left;
+            font-size: 15px;    
+        }
+        header h1 {
+            margin: 0;
+        }
+
+        .descripción {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.2em;
+            color: #555;
+            padding: 0 20px;
+        }
+
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .Perro-card {
+            display: flex;
+            flex-direction: row; 
+            background-color: white;
+            margin: 15px; 
+            transition: transform 0.3s ease;  
+        }
+
+        .Perro-card:hover {
+            transform: scale(1.05);
+        }
+
+        .Perro-card img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .Perro-card-content {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .Perro-card h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .Perro-card p {
+            font-size: 1em;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .Perro-card .estado {
+            font-weight: bold;
+            color: #4CAF50;
+            font-size: 1.2em;
+        }
+        hr {
+            border: none;            
+            height: 5px;              
+            background-color: #333;   
+            margin: 50px 0;           
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CANIS LUPUS FAMILIARIS</h1>
+    </header>
+
+    <div class="descripción">
+        <p>El perro (Canis lupus familiaris) es un mamífero carnívoro de la familia de los cánidos, una subespecie del lobo (Canis lupus), que acompaña a los humanos desde hace al menos 14.000 años. Su tamaño, forma y pelaje es muy diverso según la raza. Posee un oído y olfato muy desarrollados. Su vida promedio es de 15 años, aunque las razas pequeñas puede alcanzar una longevidad de 20 años.</p>
+        <P>Hay aproximadamente 800 razas —más que de cualquier otro animal— que varían significativamente en tamaño, fisonomía y temperamento. Las razas de perros en sentido moderno comenzaron a partir de la precisa documentación de los pedigríes que se establecen en el Kennel Club Inglés en 1873, a imitación de otros registros genealógicos para ganado y caballos.</P>
+    <hr>
+    </div>
+    <Main>
+    <div class="catalogo">
+        <div class="Perro-card">
+            <img src="Reto-1-curriculo/img/yorkshire.jpg" alt="PERRO 1">
+            <div class="Perro-card-content">
+        
+                <h3>YORKSHIRE TERRIER</h3>
+                <p>El yorkie se originó en Yorkshire, una región del norte de Inglaterra. A finales de 1865, un perro de exposición llamado Huddersfield Ben —que era un Paisley terrier con tipo de Yorkshire terrier—, propiedad de una mujer que vivía en Yorkshire, Mary Ann Foster, fue visto en las exposiciones caninas en toda Gran Bretaña, y fue quien definió el estándar de la raza denominada Yorkshire terrier. El nombre oficial de la raza se adoptó en 1870.</p>
+                 <div class="estado">EN ADOPCIÓN</div>
+            <hr>
+                </div>
+        </div>
+
+        <div class="Perro-card">
+            <img src="Reto-1-curriculo/img/dogo-aleman.jpg" alt="Perro 2">
+            <div class="Perro-card-content">
+                <h3>DOGO ALEMÁN</h3>
+                <p>El término alemán Dogge se aplicaba antiguamente a los perros grandes y fuertes que no pertenecían necesariamente a una raza en particular. En 1880, durante una exposición llevada a cabo en Berlín, se estableció el primer estándar para el dogo alemán. Este ha sido controlado por el Deutscher Doggen-Club 1888 e.V y alterado en algunas ocasiones a través de los años. La versión actual se conforma al modelo de la Federación Cinológica Internacional.</p>
+                <div class="estado">EN ADOPCIÓN</div>
+            <hr>
+            </div>
+    </Main>
+        </div>
+
+</body>
+</html>
